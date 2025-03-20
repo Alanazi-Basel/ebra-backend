@@ -214,14 +214,6 @@ Request validation is handled through dedicated Form Request classes:
 -   `DepositPostRequest`: Validates deposit amount
 -   `WithdrawPostRequest`: Validates withdrawal amount
 
-## Testing
-
-Run the tests with PHPUnit:
-
-```bash
-php artisan test
-```
-
 ## Postman Collection
 
 A Postman collection file is included in the root directory at `postman_collection.json`. Import this file into Postman to test the API endpoints.
