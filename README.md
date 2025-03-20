@@ -39,8 +39,8 @@ A Laravel-based API for managing user wallets, allowing deposits and withdrawals
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/laravel-wallet-api.git
-    cd laravel-wallet-api
+    git clone https://github.com/Alanazi-Basel/ebra-backend.git
+    cd ebra-backend
     ```
 
 2. Install dependencies:
@@ -60,39 +60,13 @@ A Laravel-based API for managing user wallets, allowing deposits and withdrawals
     php artisan key:generate
     ```
 
-## Configuration
-
-Edit the `.env` file to configure your application:
-
-```
-APP_NAME="Laravel Wallet API"
-APP_ENV=local
-APP_DEBUG=true
-APP_URL=http://localhost
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=wallet_api
-DB_USERNAME=root
-DB_PASSWORD=
-SANCTUM_STATEFUL_DOMAINS=localhost,localhost:3000,127.0.0.1,127.0.0.1:8000
-```
-
 ## Database Setup
 
-1. Create a database for the application.
-
-2. Run migrations to create the necessary tables:
+1. Run migrations to create the SQLite database and tables:
 
     ```bash
     php artisan migrate
     ```
-
-3. (Optional) Seed the database with test data:
-    ```bash
-    php artisan db:seed
-    ```
-    This will create a test user with email: `test@example.com`
 
 ## Running the Application
 
