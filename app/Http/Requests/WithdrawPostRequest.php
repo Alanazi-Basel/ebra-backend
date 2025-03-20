@@ -22,7 +22,7 @@ class WithdrawPostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'amount' => 'required|numeric|min:1|max:100000',
+            'amount' => 'required|numeric|min:0.01|max:100000',
         ];
     }
 }
